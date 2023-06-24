@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Input Validation</title>
+<style>
+    body {
+        font-family: monospace;
+        font-size: 16px;
+    }
+
+    article {
+        width: 500px;
+        margin: 50px auto;
+    }
+
+    input {
+        margin-bottom: 16px;
+    }
+
+    input[type=submit] {
+        margin-top: 16px;
+    }
+
+    #error-message {
+        color: #ef4226;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<noscript>JavaScript is NOT enabled</noscript>
+<article>
+
+    <div class="" id="form">
+        <form id="subscription-form" method="post">
+
+            <label for="input-email">E-mail:</label><br>
+            
+            <input id="input-email" name="email" type="text">
+
+            <div id="error-message"></div><br>
+
+            <input id="input-terms" name="terms" type="checkbox">
+            <label for="input-terms">I agree to <a href="#">terms of service</a></label><br>
+            
+            <input id="submit" type="submit" value="Subscribe">
+
+        </form>
+    </div>
+
+    <div class="hide" id="success-message">
+        <h1>Thanks for subscribing!</h1>
+    </div>
+
+</article>
+<script src="validation.js"></script>
+</body>
+</html>
